@@ -2,12 +2,11 @@
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.section-client__titel {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+.section-client__titl {
+  @include font(36px, 1.16, 0.03em, 700);
+
   text-align: center;
-  letter-spacing: 0.03em;
+
   color: var(--primery-text-color);
   margin-bottom: 50px;
 }
@@ -40,10 +39,10 @@
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.section-client__link:hover,
-.section-client__link:focus {
-  fill: var(--accent-text-color);
-  border-color: var(--accent-text-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+    border-color: var(--accent-text-color);
+  }
 }

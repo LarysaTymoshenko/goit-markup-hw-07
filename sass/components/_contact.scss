@@ -21,6 +21,11 @@
 
   color: var(--secondary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+  }
 }
 .contact__icon-h-em {
   width: 16px;
@@ -28,31 +33,26 @@
   margin-right: 10px;
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+    cursor: pointer;
+  }
 }
+
 .contact__icon-h-sm {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+    cursor: pointer;
+  }
 }
-.contact__icon-h-em:hover,
-.contact__icon-h-em:focus,
-.contact__icon-h-sm:hover,
-.contact__icon-h-sm:focus {
-  fill: var(--accent-text-color);
-  cursor: pointer;
-}
+
 .contact__item:not(:first-child) {
   margin-left: 50px;
-}
-.contact__link:hover,
-.contact__link:focus {
-  color: var(--accent-text-color);
-  fill: var(--accent-text-color);
-}
-.footer__contact:hover,
-.footer__contact:focus {
-  color: var(--accent-text-color);
-  fill: var(--accent-text-color);
 }

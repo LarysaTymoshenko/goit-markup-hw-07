@@ -31,6 +31,11 @@
 
   display: flex;
   align-items: center;
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+  }
 }
 
 .current::after {
@@ -60,9 +65,4 @@
 
 .site-nav__link_current {
   color: var(--accent-text-color);
-}
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--accent-text-color);
-  fill: var(--accent-text-color);
 }

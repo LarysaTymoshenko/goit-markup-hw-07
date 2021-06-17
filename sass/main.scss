@@ -1,6 +1,9 @@
 //UTILS
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
 //BASE
 @import './base/common';
 @import './base/container';
@@ -9,6 +12,8 @@
 @import './components/modal';
 @import './components/contact';
 @import './components/social-list';
+@import './components/checkbox';
+@import './components/formmodal';
 
 //LAYOUT
 @import './layout/header';
